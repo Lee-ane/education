@@ -218,28 +218,59 @@ class _TrangChuState extends State<TrangChu> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      //CORNERSTONE
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const DashBoard(uniIndex: 0)));
+                        },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/6460311566423268113/44e01791b49167cf3e80.jpg'),
                       ),
+                      //METRO POLITAN
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const DashBoard(uniIndex: 1)));
+                        },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/384637170355439749/9c9f4479e47937276e68.jpg'),
                       ),
+                      //CANADA WEST
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const DashBoard(uniIndex: 2)));
+                        },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/6900753470238023401/9d2f6719c71914474d08.jpg'),
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          // Navigator.push(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //         builder: (context) => const DashBoard()));
+                        },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/4677184620715682476/600d394699464a181357.jpg'),
                       ),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          // Navigator.push(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //         builder: (context) => const DashBoard()));
+                        },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/8058067882350356245/8d46524af34a2014795b.jpg'),
                       ),
