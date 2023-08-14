@@ -714,7 +714,6 @@ class UserBlog extends StatelessWidget {
 
 class Blogs extends StatelessWidget {
   const Blogs({super.key});
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;

@@ -18,9 +18,11 @@ class _YeuCauMetroPolitanState extends State<YeuCauMetroPolitan> {
         Image.network(
           'https://b-f10-zpcloud.zdn.vn/4433814121559258165/1da9341c0657d4098d46.jpg',
         ),
-        Positioned(
-          top: screenHeight * 0.8,
-          left: screenWidth * 0.03,
+        Padding(
+          padding: EdgeInsets.only(
+            top: screenHeight * 0.78,
+            left: screenHeight * 0.03,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

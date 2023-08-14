@@ -28,7 +28,7 @@ class _DoiTacMPState extends State<DoiTacMP> {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: screenHeight * 0.8,
+                    top: screenHeight * 0.78,
                     left: screenWidth * 0.12,
                   ),
                   child: Text(
