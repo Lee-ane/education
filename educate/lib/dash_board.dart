@@ -14,7 +14,8 @@ import 'package:flutter/material.dart';
 import 'pages/corner_stone/doi_tac_corner_stone.dart';
 
 class DashBoard extends StatefulWidget {
-  const DashBoard({super.key});
+  final int uniIndex;
+  const DashBoard({super.key, required this.uniIndex});
 
   @override
   State<DashBoard> createState() => _DashBoardState();
@@ -57,7 +58,7 @@ class _DashBoardState extends State<DashBoard> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: screenHeight * 0.1),
-                    child: pages[2].elementAt(_selectedIndex),
+                    child: pages[widget.uniIndex].elementAt(_selectedIndex),
                   ),
                   //Footer
                   SizedBox(
