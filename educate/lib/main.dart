@@ -1,4 +1,4 @@
-import 'dash_board.dart';
+import 'package:educate/trangchu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
