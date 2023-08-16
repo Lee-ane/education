@@ -226,7 +226,7 @@ class _TrangChuState extends State<TrangChu> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const DashBoard(uniIndex: 0)));
+                                      const DashBoard(/*uniIndex: 0*/)));
                         },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/6460311566423268113/44e01791b49167cf3e80.jpg'),
@@ -238,7 +238,7 @@ class _TrangChuState extends State<TrangChu> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const DashBoard(uniIndex: 1)));
+                                      const DashBoard(/*uniIndex: 1*/)));
                         },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/384637170355439749/9c9f4479e47937276e68.jpg'),
@@ -250,7 +250,7 @@ class _TrangChuState extends State<TrangChu> {
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>
-                                      const DashBoard(uniIndex: 2)));
+                                      const DashBoard(/*uniIndex: 2*/)));
                         },
                         child: Image.network(
                             'https://f10-zpcloud.zdn.vn/6900753470238023401/9d2f6719c71914474d08.jpg'),

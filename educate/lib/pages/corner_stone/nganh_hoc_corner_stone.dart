@@ -1,3 +1,4 @@
+import 'package:educate/widgets/nganh_hoc_widget.dart';
 import 'package:educate/widgets/yeu_cau_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -17,35 +18,7 @@ class _NganhHocCornerStoneState extends State<NganhHocCornerStone> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         //Các ngành học tại Canada
-        SizedBox(
-          height: screenHeight * 0.4,
-          child: Stack(
-            children: [
-              Image.network(
-                'https://b-f9-zpcloud.zdn.vn/4537398644149439469/cda0139bfd942eca7785.jpg',
-                width: screenWidth,
-                fit: BoxFit.fill,
-              ),
-              Align(
-                alignment: Alignment.bottomLeft,
-                child: Container(
-                  height: screenHeight * 0.1,
-                  width: screenWidth * 0.8,
-                  alignment: Alignment.center,
-                  color: const Color(0xff27377B),
-                  child: Text(
-                    'Các ngành học tại Cornerstone',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: screenWidth * 0.035,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+        const FirstBanner(title: 'Cornerstone', color: Color(0xff27377B)),
         SizedBox(
           height: screenHeight * 0.6,
           child: Stack(

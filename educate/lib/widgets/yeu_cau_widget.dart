@@ -116,7 +116,7 @@ class TableText extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     return Container(
       width: screenWidth * 0.2,
-      height: screenHeight * 1.1,
+      height: screenHeight * 1,
       color: color,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

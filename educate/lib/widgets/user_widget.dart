@@ -337,6 +337,31 @@ class TaggetTextMP extends StatelessWidget {
   }
 }
 
+class PlusText extends StatelessWidget {
+  final String text;
+  const PlusText({super.key, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+    return Padding(
+      padding: EdgeInsets.only(
+        left: screenWidth * 0.1,
+        top: screenHeight * 0.05,
+      ),
+      child: SizedBox(
+        width: screenWidth * 0.7,
+        child: Text(
+          '+ $text',
+          style: TextStyle(fontSize: screenWidth * 0.015),
+          textAlign: TextAlign.justify,
+        ),
+      ),
+    );
+  }
+}
+
 class Branches extends StatelessWidget {
   final String title;
   final String desc;

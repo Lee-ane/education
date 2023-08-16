@@ -27,8 +27,11 @@ class _YeuCauCornerStoneState extends State<YeuCauCornerStone> {
                   width: screenWidth,
                   fit: BoxFit.fill,
                 ),
-                Align(
-                  alignment: Alignment.bottomLeft,
+                Padding(
+                  padding: EdgeInsets.only(
+                    top: screenHeight * 0.74,
+                    left: screenWidth * 0.03,
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [

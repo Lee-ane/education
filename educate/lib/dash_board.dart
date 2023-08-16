@@ -1,7 +1,8 @@
+import 'package:educate/pages/UCW/nganh_hoc_ucw.dart';
 import 'package:educate/pages/UCW/ucw.dart';
 import 'package:educate/pages/corner_stone/corner_stone.dart';
 import 'package:educate/pages/corner_stone/nganh_hoc_corner_stone.dart';
-import 'package:educate/pages/metro_politan/doi_tac_MP.dart';
+import 'package:educate/pages/metro_politan/doi_tac_mp.dart';
 import 'package:educate/pages/metro_politan/metro_politan.dart';
 import 'package:educate/pages/metro_politan/nganh_hoc_metro_politan.dart';
 import 'package:educate/pages/metro_politan/yeu_cau_metro_politan.dart';
@@ -14,8 +15,10 @@ import 'package:flutter/material.dart';
 import 'pages/corner_stone/doi_tac_corner_stone.dart';
 
 class DashBoard extends StatefulWidget {
-  final int uniIndex;
-  const DashBoard({super.key, required this.uniIndex});
+  const DashBoard({
+    super.key,
+    /*required this.uniIndex*/
+  });
 
   @override
   State<DashBoard> createState() => _DashBoardState();
@@ -38,7 +41,9 @@ List<Widget> metroPolitan = <Widget>[
 ];
 
 List<Widget> uCW = <Widget>[
+  const NganhHocUCW(),
   const UCW(),
+  const DoiTacMP(),
 ];
 
 class _DashBoardState extends State<DashBoard> {
@@ -58,7 +63,7 @@ class _DashBoardState extends State<DashBoard> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: screenHeight * 0.1),
-                    child: pages[widget.uniIndex].elementAt(_selectedIndex),
+                    child: pages[2].elementAt(_selectedIndex),
                   ),
                   //Footer
                   SizedBox(
