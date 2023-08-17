@@ -68,6 +68,7 @@ flutter:
     - assets/twt.png
     - assets/linkedin.png
     - assets/CICC.png
+    - assets/controller.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

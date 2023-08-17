@@ -3,6 +3,7 @@ import 'package:educate/pages/UCW/ucw.dart';
 import 'package:educate/pages/corner_stone/corner_stone.dart';
 import 'package:educate/pages/corner_stone/nganh_hoc_corner_stone.dart';
 import 'package:educate/pages/esport/esport.dart';
+import 'package:educate/pages/esport/yeu_cau_esport.dart';
 import 'package:educate/pages/metro_politan/doi_tac_mp.dart';
 import 'package:educate/pages/metro_politan/metro_politan.dart';
 import 'package:educate/pages/metro_politan/nganh_hoc_metro_politan.dart';
@@ -48,6 +49,7 @@ List<Widget> uCW = <Widget>[
 ];
 
 List<Widget> eSport = <Widget>[
+  const YeuCauEsport(),
   const EsportScreen(),
 ];
 
