@@ -173,7 +173,7 @@ class Banner1st extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Lịch sử của \n $text',
+                  text,
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

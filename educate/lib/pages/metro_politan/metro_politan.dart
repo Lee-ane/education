@@ -24,7 +24,7 @@ class _MetroPolitanState extends State<MetroPolitan> {
         ),
         //1st
         const Banner1st(
-          text: 'Metropolitan Community College',
+          text: 'Lịch sử của \n Metropolitan Community College',
           color: Color(0xff163E3A),
         ),
         Container(

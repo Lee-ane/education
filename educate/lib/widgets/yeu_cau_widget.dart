@@ -41,6 +41,46 @@ class DotText extends StatelessWidget {
   }
 }
 
+class WhiteDotText extends StatelessWidget {
+  final String text;
+  final double space;
+  const WhiteDotText({super.key, required this.text, required this.space});
+
+  @override
+  Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: EdgeInsets.only(
+              top: screenHeight * 0.01, right: screenWidth * 0.005),
+          child: Icon(
+            Icons.circle,
+            color: Colors.white,
+            size: screenWidth * 0.005,
+          ),
+        ),
+        SizedBox(
+          width: screenWidth * space,
+          child: Text(
+            text,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: screenWidth * 0.015,
+              decoration: TextDecoration.none,
+              overflow: TextOverflow.clip,
+              wordSpacing: screenWidth * 0.003,
+            ),
+            textAlign: TextAlign.justify,
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 class TaggetText extends StatelessWidget {
   final String text;
   const TaggetText({super.key, required this.text});

@@ -22,7 +22,7 @@ class _UCWState extends State<UCW> {
           color: Colors.white,
         ),
         const Banner1st(
-          text: 'UNIVERSITY OF CANADA WEST',
+          text: 'Lịch sử của \n UNIVERSITY OF CANADA WEST',
           color: Color(0xffD12030),
         ),
         Container(

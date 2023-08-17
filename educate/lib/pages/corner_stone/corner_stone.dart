@@ -32,7 +32,7 @@ class _CornerStoneState extends State<CornerStone> {
         ),
         //1st
         const Banner1st(
-          text: 'Cornerstone International Community College',
+          text: 'Lịch sử của \n Cornerstone International Community College',
           color: Color(0xff27377B),
         ),
         const Content1st(

@@ -2,6 +2,7 @@ import 'package:educate/pages/UCW/nganh_hoc_ucw.dart';
 import 'package:educate/pages/UCW/ucw.dart';
 import 'package:educate/pages/corner_stone/corner_stone.dart';
 import 'package:educate/pages/corner_stone/nganh_hoc_corner_stone.dart';
+import 'package:educate/pages/esport/esport.dart';
 import 'package:educate/pages/metro_politan/doi_tac_mp.dart';
 import 'package:educate/pages/metro_politan/metro_politan.dart';
 import 'package:educate/pages/metro_politan/nganh_hoc_metro_politan.dart';
@@ -24,7 +25,7 @@ class DashBoard extends StatefulWidget {
   State<DashBoard> createState() => _DashBoardState();
 }
 
-List<List<Widget>> pages = [cornerStone, metroPolitan, uCW];
+List<List<Widget>> pages = [cornerStone, metroPolitan, uCW, eSport];
 
 List<Widget> cornerStone = <Widget>[
   const CornerStone(),
@@ -46,6 +47,10 @@ List<Widget> uCW = <Widget>[
   const DoiTacMP(),
 ];
 
+List<Widget> eSport = <Widget>[
+  const EsportScreen(),
+];
+
 class _DashBoardState extends State<DashBoard> {
   final TextEditingController _searchController = TextEditingController();
   int _selectedIndex = 0;
@@ -63,7 +68,7 @@ class _DashBoardState extends State<DashBoard> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: screenHeight * 0.1),
-                    child: pages[2].elementAt(_selectedIndex),
+                    child: pages[3].elementAt(_selectedIndex),
                   ),
                   //Footer
                   SizedBox(
