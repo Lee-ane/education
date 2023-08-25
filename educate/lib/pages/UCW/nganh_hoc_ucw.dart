@@ -17,7 +17,7 @@ class _NganhHocUCWState extends State<NganhHocUCW> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        const FirstBanner(title: 'MCC', color: Color(0xffD12030)),
+        const FirstBanner(title: 'UCW', color: Color(0xffD12030)),
         Stack(
           children: [
             Image.network(

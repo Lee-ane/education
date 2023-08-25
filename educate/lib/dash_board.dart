@@ -1,9 +1,13 @@
+import 'package:educate/pages/SSC/sprott_shaw_college.dart';
 import 'package:educate/pages/UCW/nganh_hoc_ucw.dart';
 import 'package:educate/pages/UCW/ucw.dart';
 import 'package:educate/pages/corner_stone/corner_stone.dart';
 import 'package:educate/pages/corner_stone/nganh_hoc_corner_stone.dart';
 import 'package:educate/pages/esport/esport.dart';
 import 'package:educate/pages/esport/yeu_cau_esport.dart';
+import 'package:educate/pages/fraser_valley/fraser_valley.dart';
+import 'package:educate/pages/fraser_valley/nganh_hoc_ufv.dart';
+import 'package:educate/pages/fraser_valley/yeu_cau_UFV.dart';
 import 'package:educate/pages/metro_politan/doi_tac_mp.dart';
 import 'package:educate/pages/metro_politan/metro_politan.dart';
 import 'package:educate/pages/metro_politan/nganh_hoc_metro_politan.dart';
@@ -26,7 +30,14 @@ class DashBoard extends StatefulWidget {
   State<DashBoard> createState() => _DashBoardState();
 }
 
-List<List<Widget>> pages = [cornerStone, metroPolitan, uCW, eSport];
+List<List<Widget>> pages = [
+  cornerStone,
+  metroPolitan,
+  uCW,
+  eSport,
+  fraserValley,
+  SprottShaw,
+];
 
 List<Widget> cornerStone = <Widget>[
   const CornerStone(),
@@ -53,6 +64,16 @@ List<Widget> eSport = <Widget>[
   const EsportScreen(),
 ];
 
+List<Widget> fraserValley = <Widget>[
+  const YeuCauUFV(),
+  const NganhHocUFV(),
+  const FraserValley(),
+];
+
+List<Widget> SprottShaw = <Widget>[
+  const SprottShawCollege(),
+];
+
 class _DashBoardState extends State<DashBoard> {
   final TextEditingController _searchController = TextEditingController();
   int _selectedIndex = 0;
@@ -70,7 +91,7 @@ class _DashBoardState extends State<DashBoard> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(top: screenHeight * 0.1),
-                    child: pages[3].elementAt(_selectedIndex),
+                    child: pages[5].elementAt(_selectedIndex),
                   ),
                   //Footer
                   SizedBox(
